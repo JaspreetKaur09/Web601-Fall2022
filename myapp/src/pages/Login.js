@@ -90,4 +90,4 @@ export default function Login(props) {
       </Paper>
     </div>
   );
-};
+}

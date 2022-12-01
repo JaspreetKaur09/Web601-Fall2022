@@ -18,9 +18,7 @@ function App() {
 
   return (
     <div>
-
-
-      <Routes>
+      ``  <Routes>
         <Route path="/login" element={<Login auth={authenticate}/>} />
         <Route path="/home" element={<Home logout={logout} status={status}/>} />
       </Routes>
