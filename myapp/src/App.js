@@ -3,6 +3,7 @@ import {Row, Col, Divider, Typography} from 'antd';
 import axios from "axios";
 import MyCard from './Components/MyCard';
 
+
 const {Title} = Typography;
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   const [status, setStatus] = useState(false);
 
   useEffect(()=>{
-    axios.get('https://jsonplaceholder.typicode.com/posts/').then((response)=>{
+    axios.get('https://jsonplaceholder.typicode.com/users').then((response)=>{
       setBlogs(response.data)
       setStatus(true)
     }).catch(()=>{
