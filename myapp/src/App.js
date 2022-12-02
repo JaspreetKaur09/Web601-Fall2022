@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Row, Col, Divider} from 'antd';
+import {Row, Col, Divider, Typography} from 'antd';
 import axios from "axios";
 import MyCard from './Components/MyCard';
+
+const {Title} = Typography;
 
 function App() {
   const [blogs,setBlogs] =useState(null);
@@ -16,6 +18,7 @@ function App() {
       setStatus(false)
     })
   },[])
+  
   return (
     <div>
         <Row gutter={16} >
@@ -26,7 +29,7 @@ function App() {
         <Divider orientation="center">PROFILE</Divider>
         <Row gutter={16} >
           {status && blogs.map((blogObj)=>{
-            return <MyCard title={blogObj.title} content={blogObj.body}/>
+            return <MyCard Key={blogObj.id} title={blogObj.title} content={blogObj.body}/>
           })}
         </Row>
 
