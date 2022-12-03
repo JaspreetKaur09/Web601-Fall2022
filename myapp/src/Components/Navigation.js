@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
+
 export default function Navigation(){
     return(
         <div className="navigation">
@@ -12,9 +14,9 @@ export default function Navigation(){
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="/home">
                   Home
-                  <span className="sr-only">(current)</span>
+                  <span className="sr-only"></span>
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -23,6 +25,7 @@ export default function Navigation(){
                 </NavLink>
               </li>
             </ul>
+
           </div>
         </div>
       </nav>

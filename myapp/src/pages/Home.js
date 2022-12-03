@@ -41,21 +41,17 @@ export default function Home(props) {
 
   return (
     <>
+  
       <Row>
-        <Col xl={24}>
-          <h1>MY APP</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Button type="primary" className="float-right" onClick={handleClick} style={{display: 'flex', justifyContent:'right'}}>
+        <Col style={{display:'flex', float:'right'}}>
+          <Button type="primary" onClick={handleClick} >
             Logout
           </Button>
         </Col>
       </Row><br/>
       <div>
         <Row gutter={16}>
-          <Col className="gutter-row">USERS'S PROFILE</Col>
+          <Col className="gutter-row" style={{fontSize:'52px'}}>USERS'S PROFILE</Col>
         </Row>
         <Divider orientation="center">PROFILE</Divider>
         <Row gutter={16}>

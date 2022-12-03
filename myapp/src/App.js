@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import About from "./pages/About";
+
 
 import { useState } from "react";
 
@@ -18,9 +20,12 @@ function App() {
 
   return (
     <div>
-      ``  <Routes>
+       <Routes>
+        
+
         <Route path="/" element={<Login auth={authenticate}/>} />
         <Route path="/home" element={<Home logout={logout} status={status}/>} />
+        <Route path="/about" element={<About/>}/>
       </Routes>
     </div>
   );
