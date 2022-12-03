@@ -3,7 +3,7 @@ import React from "react";
 import Paper from "@mui/material/Paper";
 import { useNavigate } from "react-router-dom";
 
-export default function Login(props) {
+const Login = (props)=> {
   const navigate = useNavigate();
 
   const onFinish = (values) => {
