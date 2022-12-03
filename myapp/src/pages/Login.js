@@ -90,4 +90,5 @@ const Login = (props)=> {
       </Paper>
     </div>
   );
-}
+};
+export default Login;
